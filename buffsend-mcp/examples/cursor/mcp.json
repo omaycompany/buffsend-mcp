@@ -1,0 +1,28 @@
+{
+  "_setup_instructions": {
+    "file_location": {
+      "macOS_linux": "~/.cursor/mcp.json",
+      "windows": "%USERPROFILE%\\.cursor\\mcp.json"
+    },
+    "steps": [
+      "1. Get your BuffSend MCP API key from https://www.buffsend.com/account/api-keys",
+      "2. Replace 'YOUR_API_KEY_HERE' with your actual API key",
+      "3. Save this file to the location above for your operating system",
+      "4. Restart Cursor",
+      "5. Test by asking: 'Check my BuffSend account status'"
+    ],
+    "cursor_specific_notes": [
+      "Make sure to enable MCP in Cursor settings",
+      "You can also configure this through Cursor's settings UI"
+    ]
+  },
+  "mcpServers": {
+    "buffsend": {
+      "headers": {
+        "Authorization": "Bearer YOUR_API_KEY_HERE"
+      },
+      "transport": "http",
+      "url": "https://www.buffsend.com/api/v1/mcp"
+    }
+  }
+} 
