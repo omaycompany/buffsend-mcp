@@ -1,0 +1,31 @@
+{
+  "name": "buffsend-mcp-client",
+  "version": "1.0.0",
+  "description": "Test client and utilities for BuffSend MCP integration",
+  "main": "test-connection.js",
+  "bin": {
+    "buffsend-mcp-test": "./test-connection.js"
+  },
+  "scripts": {
+    "test": "node test-connection.js",
+    "test-connection": "node test-connection.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/buffsend-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "buffsend",
+    "email-marketing", 
+    "ai-assistant",
+    "model-context-protocol",
+    "lead-generation"
+  ],
+  "author": "BuffSend Inc.",
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

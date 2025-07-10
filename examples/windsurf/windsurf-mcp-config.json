@@ -1,0 +1,32 @@
+{
+  "_setup_instructions": {
+    "windsurf_setup": [
+      "1. Open Windsurf IDE",
+      "2. Go to Settings → Extensions → MCP",
+      "3. Add a new MCP server with the configuration below",
+      "4. Get your BuffSend MCP API key from https://www.buffsend.com/account/api-keys",
+      "5. Replace 'YOUR_API_KEY_HERE' with your actual API key",
+      "6. Save the configuration",
+      "7. Restart Windsurf",
+      "8. Test by asking: 'Check my BuffSend account status'"
+    ],
+    "alternative_file_config": {
+      "note": "Some Windsurf versions may support file-based configuration",
+      "possible_locations": [
+        "~/.windsurf/mcp.json",
+        "Check Windsurf documentation for your version"
+      ]
+    }
+  },
+  "mcpServers": {
+    "buffsend": {
+      "name": "BuffSend MCP",
+      "description": "Email marketing automation with 250M+ contacts",
+      "headers": {
+        "Authorization": "Bearer YOUR_API_KEY_HERE"
+      },
+      "transport": "http",
+      "url": "https://www.buffsend.com/api/v1/mcp"
+    }
+  }
+} 
