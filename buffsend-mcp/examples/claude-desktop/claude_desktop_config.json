@@ -1,0 +1,24 @@
+{
+  "_setup_instructions": {
+    "file_location": {
+      "macOS": "~/Library/Application Support/Claude/claude_desktop_config.json",
+      "windows": "%APPDATA%\\Claude\\claude_desktop_config.json"
+    },
+    "steps": [
+      "1. Get your BuffSend MCP API key from https://www.buffsend.com/account/api-keys",
+      "2. Replace 'YOUR_API_KEY_HERE' with your actual API key",
+      "3. Save this file to the location above for your operating system",
+      "4. Restart Claude Desktop",
+      "5. Test by asking: 'Check my BuffSend account status'"
+    ]
+  },
+  "mcpServers": {
+    "buffsend": {
+      "headers": {
+        "Authorization": "Bearer YOUR_API_KEY_HERE"
+      },
+      "transport": "http",
+      "url": "https://www.buffsend.com/api/v1/mcp"
+    }
+  }
+} 
